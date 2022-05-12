@@ -1,0 +1,109 @@
+body{
+	direction: rtl; 
+	font-family: 'Almarai'!important;
+	text-align: right;
+}
+
+
+/*############ menu starts ############*/
+.m_header .lang_menu{  
+	right: auto;
+	left: 35px;
+}
+.m_header .navbar-brand{ text-align: right;    margin-right: -15px; }
+.m_header .lang_menu{     flex-direction: row-reverse; }
+
+.m_header .lang_menu a.en{ font-weight:normal;}
+.m_header .lang_menu a.ar{ font-weight:bold;}
+/*############ menu ends ############*/
+
+
+/*############ about starts ############*/
+.sec_about_intro h1, .sec_board_directors .row_wrapper h2{ 
+	font-weight: 900; 
+	border-right: 1px solid #6e9ed3;
+	border-left: none;
+}
+
+.about_grid .desc .ftrd_icon{ left: 20px; right: auto; }
+
+
+.about_cstm_sec .desc h3{ font-weight: 900; }
+.timeline_wrap .item::after, .timeline_wrap .item::before{
+	right: auto;
+	left: -17px;
+	transform: scale(-1);
+}
+.timeline_wrap .item::before{ right: 0; left: auto; }
+
+.timeline_wrap .item:nth-child(3)::after{
+	border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+    border-right-color: #a7c4e4;
+    right: auto;
+    left: 0;
+    transform: scale(-1);
+}
+
+#ipo-prospectus-en .inner_desc, #ipo-prospectus-ar .inner_desc{ direction: ltr; }
+/*############ about ends ############*/
+
+
+/*############ team starts ############*/
+.mfp-close{ right: auto; left: 55px; }
+.mfp-arrow{     left: 480px;  }
+.team_popup .inner{ text-align: right; }
+.team_popup .inner_desc{ padding: 35px 0px 35px 40px; }
+.team_popup .inner h3{ margin-bottom:10px;}
+.team_popup .inner_desc p span{ color: #000; font-size:15px;     margin-bottom: 0px;}
+/*############ team ends ############*/
+
+
+/*############ contact starts ############*/
+.sec_contact .desc{ padding-left: 10%; padding-right: 0; }
+.sec_contact .desc p a em{ direction: ltr; display: inline-block;    font-style: normal; }
+/*############ contact ends ############*/
+
+
+/*############ faq starts ############*/
+.sec_faq .card-header button{ padding: 28px 30px 28px 90px;    text-align: right; }
+.sec_faq .card-header .btn-link:after{ right: auto; left: 30px; }
+.sec_faq .card-header button span{ padding-left: 25px; padding-right: 0px; }
+.sec_faq .card-body{ padding: 0px 100px 40px 80px; }
+/*############ faq ends ############*/
+
+
+
+@media(max-width: 991px){
+	.m_header .navbar-brand{ margin-right: 0px; }
+	.m_header .ml-auto{ padding-right: 0px; }
+
+	/*team popup*/
+	.mfp-arrow{ right: 20px; }
+	.mfp-arrow-left{ right: 75px; }
+	.mfp-close{ left: 20px; }
+
+
+}
+
+@media(max-width: 800px){
+	.m_header .ml-auto{ padding-right: 5px; }
+	.m_header .lang_menu{ justify-content: flex-end; padding-right: 5px; }
+
+	/*about*/
+	.timeline_wrap .item:nth-child(3)::after{     left: -17px; }
+
+
+	.mfp-arrow-left{ right: 55px; }
+
+
+}
+
+
+@media(max-width: 665px){
+	/*faq*/
+	.sec_faq .card-body{     padding: 5px 20px 30px 20px; }
+	.sec_faq .card-header button{ padding: 28px 15px 28px 55px; }
+
+
+}
